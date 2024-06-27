@@ -1,0 +1,9 @@
+version: '1.1'
+services:
+  vite:
+    image: "node"
+    container_name: "vite"
+    ports:
+      - 5173:5173
+    environment:
+      - MONGO_URL=mongodb://mongodb:27017/data  
